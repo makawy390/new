@@ -1,0 +1,56 @@
+.skills {
+  padding: 40px 0;
+}
+.box {
+  background-color: var(--color-box);
+  background-color: #333;
+
+  padding: 25px 35px;
+  /* margin-top: 20px; */
+  border-radius: 4px;
+}
+.box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.pag {
+  display: flex;
+  position: relative;
+}
+.pag svg {
+  position: relative;
+  top: 5px;
+}
+.pag li {
+  padding-left: 15px;
+}
+.listed-personal-skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.personal-skills {
+  padding: 40px 0;
+}
+.listed-personal-skills li {
+  width: 100%;
+  margin-right: 15px;
+  padding: 10px 25px;
+}
+.personal-skills h2,
+.techincal-skills h2 {
+  padding-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-wrap: 2px;
+}
+.box-skills {
+  background-color: var(--color-box);
+  color: #333;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 12px 25px;
+}

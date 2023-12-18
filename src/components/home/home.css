@@ -1,0 +1,18 @@
+.home {
+  padding: 100px 0;
+  line-height: 2.5;
+}
+.home .list {
+  list-style: none;
+  display: flex;
+}
+.list li {
+  padding-right: 15px;
+}
+.list li svg {
+  font-size: 25px;
+}
+.home img {
+  max-width: 250px;
+  cursor: pointer;
+}

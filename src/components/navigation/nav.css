@@ -1,0 +1,44 @@
+.navigation {
+  position: fixed;
+  top: 0.5rem;
+  gap: 0.8rem;
+  left: 50%;
+  padding: 0.7rem 0.7rem;
+  transform: translateX(-50%);
+  width: max-content;
+  z-index: 2;
+}
+.list-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+  align-content: center;
+  background: var(--backgroud-image);
+  border-radius: 50px;
+  padding: 0.2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.list-navigation li {
+  padding: 0 12px;
+}
+.list-navigation li a {
+  display: block;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.list-navigation li a svg {
+  font-size: 18px;
+}
+.list-navigation li a.active {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-navigation li a span {
+  display: block;
+}
