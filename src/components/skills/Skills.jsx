@@ -35,7 +35,7 @@ const Skills = () => {
   ];
 
   const filtrationSkills = skills.map((skills, index) => (
-    <Grid item md={6} key={index}>
+    <Grid item xs={6}  key={index}>
       <div className="pag">
         <FcOk />
         <li>{skills}</li>
@@ -43,7 +43,7 @@ const Skills = () => {
     </Grid>
   ));
   const filtrationOtherSkills = otherSkills.map((skills, index) => (
-    <Grid item md={6} key={index}>
+    <Grid item xs={6} key={index}>
       <div className="pag">
         <FcOk />
         <li>{skills}</li>
@@ -51,9 +51,9 @@ const Skills = () => {
     </Grid>
   ));
   const filtrationPersonalSkills = personalSkills.map((skills, index) => (
-    <Grid md={4} key={index}>
+    <Grid md={4} xs={12} key={index}>
       <div className="box-skills">
-        <span>{skills}</span>
+        <FcOk />  <span>{skills}</span>
       </div>
     </Grid>
   ));

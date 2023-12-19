@@ -1,20 +1,21 @@
 import React, { Fragment } from "react";
 import axios from "axios";
 import { api } from "../../api/api";
-import { Image } from "primereact/image";
+// import { Image } from "primereact/image";
 import { ScrollTop } from "primereact/scrolltop";
 // import { FcOk } from "react-icons/fc";
+import { FcOk } from 'react-icons/fc';
 
 import "./projects.css";
 
 import { Container, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import SpinnerApp from "../root/Spinner";
-import { FiSearch } from "react-icons/fi";
+// import { FiSearch } from "react-icons/fi";
 
 const Projects = () => {
   const [project, setProject] = React.useState([]);
-     const icon = (<FiSearch />)
+    //  const icon = (<FiSearch />)
 
   React.useEffect(() => {
     axios
@@ -30,17 +31,23 @@ const Projects = () => {
       </Grid> */}
       <Grid item md={4} xs={12}>
         <div className="image-box">
-        <Image src={project.image} alt="Image" preview width="25px"  indicatorIcon={icon}/>
-        <div className="box">
-          <h3>{project.title}</h3>
-          {/* <Grid container spacing={1}>
+        {/* <Image src={project.image} alt="Image" preview width="25px"  indicatorIcon={icon}/> */}
+        <img src={project.image} alt="Image" />
+        {/* <Image src={project.image} alt="Image" preview width="25px"  indicatorIcon={icon}/> */}
+
+        <div className="box-projects">
+          <Grid container spacing={2}   alignContent="center" alignItems='center'   direction="row" >
             {project?.technolgies?.split(",")?.map((ele, index) => (
               <Grid item xs={6} key={index}>
                 <FcOk /> <span>{ele}</span>
               </Grid>
             ))}
-          </Grid> */}
-          {/* <ul className="listed-link">
+          </Grid>
+                    {/* <Link to={`${project._id}`}>View Project</Link> */}
+        </div>
+        </div>
+          <h3>{project.title}</h3>
+        <ul className="listed-link">
             <li>
               <Link to={project.repo_link} target="_blank">
                 View Code
@@ -51,10 +58,8 @@ const Projects = () => {
                 View Project
               </Link>
             </li>
-          </ul> */}
-          <Link to={`${project._id}`}>View Project</Link>
-        </div>
-        </div>
+          </ul>
+
       </Grid>
     </Fragment>
   ));

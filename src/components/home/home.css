@@ -15,4 +15,5 @@
 .home img {
   max-width: 250px;
   cursor: pointer;
+  border-radius: 30% 70% 67% 33% / 40% 51% 49% 60%
 }

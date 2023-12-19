@@ -3,6 +3,14 @@ import { Container, Typography, Grid } from "@mui/material";
 import { FcGraduationCap } from "react-icons/fc";
 import img from '../../assets/1.png'
 const About = () => {
+  const data = [
+    {title : "Birthday" , value : "10/08/1999"},
+    {title : "Age" , value : "24"},
+    {title : "Nationality" , value : "Egyptian"},
+    {title : "Address" , value : "Egypt , Cairo"},
+    {title : "Email" , value : "moohesham83@gmail.com"},
+    {title : "phone" , value : "01555245948"},
+  ];
   return (
     <div className="about">
       <Container>
@@ -26,6 +34,14 @@ const About = () => {
           collaboratively with designers and back-end developers to bring
           innovative ideas to life.
         </Typography>
+        
+          <Grid container spacing={2}>
+            {data.map((data , index)=> (
+              <Grid item md={6} key={index}>
+                <span>{data.title} :  {data.value}</span>
+              </Grid>
+            ))}
+          </Grid>
           </Grid>
           <Grid item md={4}>
             <div className="img">
@@ -38,7 +54,6 @@ const About = () => {
             Education
           </Typography>
           <span className="graduation">
-            {" "}
             <FcGraduationCap />
           </span>
 
@@ -55,11 +70,7 @@ const About = () => {
             </Grid>
           </Grid>
         </div>
-        <div className="language">
-          <Typography variant="h4" component="h4">
-            Languages
-          </Typography>
-        </div>
+
       </Container>
     </div>
   );
