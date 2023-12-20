@@ -50,7 +50,11 @@ const Home = () => {
             </button>
           </Grid>
           <Grid item md={4}>
+            <div className="image">
+              <div className="contact-image">
             <img src={img} alt="" />
+              </div>
+            </div>
           </Grid>
         </Grid>
       </Container>

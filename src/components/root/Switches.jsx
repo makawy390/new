@@ -57,8 +57,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   const dispatch = useDispatch();
 
   return (
-    <FormGroup>
-      <FormControlLabel
+    <FormGroup >
+      <FormControlLabel sx={{position:'fixed' , top:'20px' , right : "20px"}}
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
         onClick={()=> dispatch(changeMode())}
       />

@@ -3,6 +3,8 @@ import {createBrowserRouter , RouterProvider} from 'react-router-dom'
 import Root from './components/root/Root';
 import { lazy } from 'react';
 import ProjectDetails from './components/projects/ProjectDetails';
+import SignUp from './forms/sign-up/SignUp';
+import SignIn from './forms/sign-in/SignIn';
 const Home = lazy(()=>import ('./components/home/Home'));
 const About = lazy(()=>import ('./components/about-me/About'));
 const Projects = lazy(()=>import ('./components/projects/Projects'));
@@ -36,7 +38,16 @@ function App() {
         {
           path : '/contact',
           element : <Contact />
-        },       
+        },{   
+          path : '/signup',
+          element : <SignUp />
+        },
+        {   
+          path : '/signin',
+          element : <SignIn />
+        }  
+
+            
       ]
     },
    

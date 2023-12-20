@@ -6,7 +6,6 @@
 }
 .main.dark {
   background-color: var(--main-background);
-  /* background-color: #181823; */
   color: var(--main-color);
 }
 .spinn {

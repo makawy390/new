@@ -1,7 +1,7 @@
 import "./about.css";
 import { Container, Typography, Grid } from "@mui/material";
 import { FcGraduationCap } from "react-icons/fc";
-import img from '../../assets/1.png'
+// import img from '../../assets/1.png'
 const About = () => {
   const data = [
     {title : "Birthday" , value : "10/08/1999"},
@@ -43,11 +43,7 @@ const About = () => {
             ))}
           </Grid>
           </Grid>
-          <Grid item md={4}>
-            <div className="img">
-            <img  src={img} alt="...."/>
-            </div>
-          </Grid>
+ 
         </Grid>
         <div className="education">
           <Typography variant="h4" component="h2">
