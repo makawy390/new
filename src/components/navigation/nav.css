@@ -14,7 +14,7 @@
   align-items: flex-end;
   list-style: none;
   align-content: center;
-  background: var(--backgroud-image);
+  background: var(--color-par);
   border-radius: 50px;
   padding: 0.2rem;
   width: 100%;
@@ -30,9 +30,10 @@
 }
 .list-navigation li a svg {
   font-size: 18px;
+color: #fff;
 }
 .list-navigation li a.active {
-  background-color: #fff;
+  background: var(--color-button);
   border-radius: 50px;
   padding: 8px 8px;
   display: flex;

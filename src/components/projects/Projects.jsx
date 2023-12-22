@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import axios from "axios";
-import { api } from "../../api/api";
+// import axios from "axios";
+// import { api } from "../../api/api";
 // import { Image } from "primereact/image";
 import { ScrollTop } from "primereact/scrolltop";
 // import { FcOk } from "react-icons/fc";
@@ -12,19 +12,24 @@ import { Container, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import SpinnerApp from "../root/Spinner";
 // import { FiSearch } from "react-icons/fi";
+import { useDispatch } from 'react-redux';
+import { fetchProjects } from "../../rtk/reducer/asyncSyncProjects";
+import { useSelector } from 'react-redux';
 
 const Projects = () => {
-  const [project, setProject] = React.useState([]);
+  // const [project, setProject] = React.useState([]);
+   const projects = useSelector(state => state?.token?.data?.data);
     //  const icon = (<FiSearch />)
-
+const dispatch = useDispatch();
   React.useEffect(() => {
-    axios
-      .get(`${api}api/projects`)
-      .then((res) => setProject(res.data.data))
-      .catch((err) => console.log(err));
-  }, []);
-  console.log(project);
-  const filtrationProjects = project.map((project) => (
+    // axios
+    //   .get(`${api}api/projects`)
+    //   .then((res) => setProject(res.data.data))
+    //   .catch((err) => console.log(err));
+      dispatch(fetchProjects())
+  },[]);
+  // console.log(project);
+  const filtrationProjects = projects?.map((project) => (
     <Fragment key={project._id}>
       {/* <Grid item md={6} xs={12}>
         <Image src={project.image} alt="Image" preview />
@@ -68,7 +73,7 @@ const Projects = () => {
       <Container fixed>
         <h3>OUR Projects</h3>
         <Grid container spacing={2}>
-          {project.length === 0 ? <SpinnerApp /> : <>{filtrationProjects}</>}
+          {projects === undefined? <SpinnerApp /> : <>{filtrationProjects}</>}
           <ScrollTop />
         </Grid>
       </Container>

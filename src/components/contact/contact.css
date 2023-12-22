@@ -2,14 +2,12 @@
   padding: 80px 0;
 }
 .contact .box-contact {
-  background: var(--color-box);
   display: flex;
   padding: 12px;
-  color: var(--main-color-box);
 }
 .box-contact svg {
   font-size: 20px;
-  background: #e91e63;
+  background: var(--color-button);
   color: #fff;
   width: 30px;
   height: 30px;

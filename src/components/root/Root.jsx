@@ -12,7 +12,7 @@ const Root = () => {
   return (
     <>
       <Navigation />
-      <div className={`main ${mode === false ? "" : "dark"}`}>
+      <div className={`${mode === false ? "light" : "dark"}`}>
         {/* <SwitchApp /> */}
         <Switches />
         <Suspense fallback={<SpinnerApp />}>

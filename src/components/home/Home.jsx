@@ -3,7 +3,7 @@ import { SiGmail } from "react-icons/si";
 import { Container, Grid } from "@mui/material";
 import { PiWhatsappLogoDuotone } from "react-icons/pi";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import img from "../../assets/1.png";
+import img from "../../assets/2.png";
 import "./home.css";
 import { Link } from "react-router-dom";
 const Home = () => {

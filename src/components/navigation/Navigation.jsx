@@ -1,10 +1,11 @@
 import { AiTwotoneHome } from "react-icons/ai";
-import { BiSolidContact } from "react-icons/bi";
+// import { BiSolidContact } from "react-icons/bi";
 import { FcContacts } from "react-icons/fc";
 import { NavLink } from "react-router-dom";
 import { FaCircleUser } from "react-icons/fa6";
 import { BsJournalBookmarkFill } from "react-icons/bs";
 import "./nav.css";
+import { MdHomeRepairService } from "react-icons/md";
 const Navigation = () => {
   return (
     <div className="navigation">
@@ -26,7 +27,8 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/portfolio">
-            <BiSolidContact />
+            <MdHomeRepairService />
+
           </NavLink>{" "}
         </li>
         <li>

@@ -2,6 +2,8 @@ import "./about.css";
 import { Container, Typography, Grid } from "@mui/material";
 import { FcGraduationCap } from "react-icons/fc";
 // import img from '../../assets/1.png'
+import { Fa2 , Fa0 , Fa1 } from "react-icons/fa6";
+
 const About = () => {
   const data = [
     {title : "Birthday" , value : "10/08/1999"},
@@ -34,8 +36,8 @@ const About = () => {
           collaboratively with designers and back-end developers to bring
           innovative ideas to life.
         </Typography>
-        
-          <Grid container spacing={2}>
+         <hr />
+          <Grid container spacing={2} sx={{marginTop : '5px'}}>
             {data.map((data , index)=> (
               <Grid item md={6} key={index}>
                 <span>{data.title} :  {data.value}</span>
@@ -45,6 +47,27 @@ const About = () => {
           </Grid>
  
         </Grid>
+         <div className="services">
+          <h3>SERVICE</h3>
+          <h4>What I Do</h4>
+          <Grid container spacing={2}>
+            <Grid item md={6}>
+              <div className="box-service">
+              <span className="numbers">01</span>
+              
+              <h3>Bulid Web Site</h3>
+              <p>I build front-end websites from scratch, whatever you want with the latest tools, and it is easy, fast, and smooth. I can make any changes you want, any sites you want, whether it is private sites, for a company, or for your stores.</p>
+              </div>
+            </Grid>
+            <Grid item md={6}>
+              <div className="box-service">
+              <span className="numbers">02  </span>
+              <h3>Web devepler</h3>
+              <p>I am the developer of the site, and where did any problems occur in it I am repairing it by doing maintenance, according to what you want.</p>
+              </div>
+            </Grid>
+          </Grid>
+        </div>
         <div className="education">
           <Typography variant="h4" component="h2">
             Education
@@ -66,6 +89,7 @@ const About = () => {
             </Grid>
           </Grid>
         </div>
+        
 
       </Container>
     </div>

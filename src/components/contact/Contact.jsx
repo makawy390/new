@@ -13,7 +13,7 @@ const Contact = () => {
     {
       icon: <FaPhoneAlt />,
       title: "Call Me",
-      type: "+(02)1010838632",
+      type: "+(20)1010838632",
     },
     {
       icon: <MdOutgoingMail />,
@@ -24,7 +24,7 @@ const Contact = () => {
     {
       icon: <PiWhatsappLogoDuotone />,
       title: "WhatsApp",
-      type: "01555245948 ",
+      type: "+(20)1555245948 ",
     },
   ];
   const filtrationContact = contact.map((contacts, index) => (

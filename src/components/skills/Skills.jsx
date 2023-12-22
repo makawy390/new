@@ -91,12 +91,11 @@ const Skills = () => {
           <Typography variant="h5" component="h2">
             Personal Skills
           </Typography>
-          {/* <ul className='listed-personal-skills'> */}
           <Grid container spacing={2}>
             {filtrationPersonalSkills}
           </Grid>
-          {/* </ul> */}
         </div>
+       
       </Container>
     </div>
   );
