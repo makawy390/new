@@ -5,6 +5,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import { changeMode } from "../../rtk/reducer/createSlice";
 import { useDispatch } from 'react-redux';
+import { Container } from '@mui/material';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -57,13 +58,15 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   const dispatch = useDispatch();
 
   return (
-    <FormGroup >
-      <FormControlLabel sx={{position:'fixed' , top:'20px' , right : "20px"}}
+    <Container fixed>
+          <FormGroup >
+      <FormControlLabel sx={{position:'fixed' }}
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
         onClick={()=> dispatch(changeMode())}
       />
 
     </FormGroup>
+    </Container>
   );
 }
 export default Switches;

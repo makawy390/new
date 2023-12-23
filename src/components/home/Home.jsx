@@ -23,7 +23,7 @@ const Home = () => {
     <div className="home">
       <Container fixed>
         <Grid container spacing={2}>
-          <Grid item md={6}>
+          <Grid item md={6} xs={12}>
             <h2>Hi,I am Mohamed Hesham</h2>
             <span>Front End Devloper React JS</span>
             <p>
@@ -49,7 +49,7 @@ const Home = () => {
               Contact Me <IoIosArrowRoundForward />{" "}
             </button>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} xs={12}>
             <div className="image">
               <div className="contact-image">
             <img src={img} alt="" />

@@ -4,6 +4,7 @@
 .contact .box-contact {
   display: flex;
   padding: 12px;
+  margin-bottom: 8px;
 }
 .box-contact svg {
   font-size: 20px;
@@ -21,4 +22,7 @@
 }
 .contact h2 {
   margin: 30px 0;
+}
+.contact img{
+  width: 350px;
 }

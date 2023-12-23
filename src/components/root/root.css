@@ -4,8 +4,9 @@
   color: var(--main-background);
   transition: all 0.5s ease-in-out;
 }
-.light .skills .box , .light .skills .box-skills , .light .services .box-service 
-,.light .contact .box-contact , .light hr{
+.light .skills .box , .light .skills .box-skills 
+, .light .services .box-service , 
+.light .contact .box-contact , .light hr{
     background-color: var(--main-background);
   color: var(--main-color);
   transition: all 0.3s ease-in-out;
@@ -18,7 +19,7 @@
 }
 .dark .skills .box , .dark .skills .box-skills , .dark .services .box-service
  ,.dark .contact .box-contact , .dark hr{
-    background-color: var(--main-color);
+    background: var(--main-color);
   color: var(--main-background);
   transition: all 0.3s ease-in-out;
 }
@@ -32,3 +33,32 @@ hr{
 margin-top: 15px;}
 
 
+.light .css-1b7o686-MuiInputBase-root-MuiInput-root:after , .light .css-q469bn-MuiInputBase-root-MuiInput-root:after{
+  border:  2.2px solid var(--main-background);
+}
+.css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  font-size: 20px ;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+input{
+  padding: 15px 25px !important;
+}
+.light .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color:var(--main-background);
+}
+.light input {
+  color:var(--main-background);
+}
+/* ========================== */
+.dark .css-1b7o686-MuiInputBase-root-MuiInput-root:after , .dark .css-q469bn-MuiInputBase-root-MuiInput-root:after {
+  border:  2.2px solid var(--main-color);
+}
+.dark .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color:var(--main-color);
+
+}
+.dark input {
+  padding: 15px 25px !important;
+  color:var(--main-color);
+}
