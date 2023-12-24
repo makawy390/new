@@ -48,7 +48,7 @@ const Contact = () => {
       <Container fixed>
         <h2>Quick Contact Address</h2>
         <p></p>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
                     {filtrationContact}
           <Grid item md={5}>
             <img src={image} alt="...."  />
@@ -66,7 +66,7 @@ sx={{marginBottom : '10px'}}
           variant="standard"
           helperText="please Write Message"
         />
-
+        <button>Send</button>
           </Grid>
         </Grid>
       </Container>

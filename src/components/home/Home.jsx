@@ -5,7 +5,8 @@ import { PiWhatsappLogoDuotone } from "react-icons/pi";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import img from "../../assets/2.png";
 import "./home.css";
-import { Link } from "react-router-dom";
+// import {} from 'react-router-dom';
+import { Link , useNavigate } from "react-router-dom";
 const Home = () => {
   const arrLinks = [
     {
@@ -19,44 +20,31 @@ const Home = () => {
       url: "https://api.whatsapp.com/send?phone=+201555245948&text=Hello Dear,Thanks for contacting with me,Can you give me more information about your project!",
     },
   ];
+  const navigate = useNavigate();
   return (
     <div className="home">
       <Container fixed>
-        <Grid container spacing={2}>
-          <Grid item md={6} xs={12}>
-            <h2>Hi,I am Mohamed Hesham</h2>
-            <span>Front End Devloper React JS</span>
-            <p>
-              Having an experience in web design <br />
-              Building quality websites and <br /> application with HTML,CSS and{" "}
-              <br />
-              JavaScript{" "}
-            </p>
-            <ul className="list">
-              {arrLinks.map((arr, id) => (
-                <li key={id}>
-                  <Link
-                    href={arr.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {arr.icon}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <button>
-              Contact Me <IoIosArrowRoundForward />{" "}
-            </button>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <div className="image">
-              <div className="contact-image">
-            <img src={img} alt="" />
-              </div>
-            </div>
-          </Grid>
+       <Grid container spacing={2}>
+        <Grid item xs={4} md={4.5} >
+        <div className="listed">
+          {arrLinks.map(({icon , url}, index)=>(
+            <li key={index}><Link to={url}>{icon}</Link></li>
+          ))}
+        </div>
         </Grid>
+        <Grid item xs={8} md={4}>
+           <div className="content-home">
+          <span>Hello Iam</span>
+        <h3>Mohamed Mekawy</h3>
+        <span>front end developer</span>
+        <button>dowload cv</button>
+        <button>Contact</button>
+        <div className="image-content">
+          <img src={img} alt="." />
+        </div>
+        </div>
+        </Grid>
+       </Grid>
       </Container>
     </div>
   );

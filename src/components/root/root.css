@@ -5,7 +5,7 @@
   transition: all 0.5s ease-in-out;
 }
 .light .skills .box , .light .skills .box-skills 
-, .light .services .box-service , 
+, .light .services .box-service , .light .contact-image,
 .light .contact .box-contact , .light hr{
     background-color: var(--main-background);
   color: var(--main-color);
@@ -18,7 +18,7 @@
   color: var(--main-color);
 }
 .dark .skills .box , .dark .skills .box-skills , .dark .services .box-service
- ,.dark .contact .box-contact , .dark hr{
+ ,.dark .contact .box-contact , .dark hr , .dark .contact-image{
     background: var(--main-color);
   color: var(--main-background);
   transition: all 0.3s ease-in-out;

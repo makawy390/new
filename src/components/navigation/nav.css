@@ -1,7 +1,6 @@
 .navigation {
   position: fixed;
-  top: 0.5rem;
-  gap: 0.8rem;
+  bottom: 20px;
   left: 50%;
   padding: 0.7rem 0.7rem;
   transform: translateX(-50%);
@@ -10,36 +9,47 @@
 }
 .list-navigation {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   align-content: center;
   background: var(--color-par);
   border-radius: 50px;
-  padding: 0.2rem;
-  width: 100%;
+  padding: 15px 30px;
+  width: 300px;
+  border-radius: 100px;
   flex-wrap: wrap;
 }
 .list-navigation li {
-  padding: 0 12px;
-}
-.list-navigation li a {
-  display: block;
-  text-align: center;
-  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-.list-navigation li a svg {
-  font-size: 18px;
-color: #fff;
-}
-.list-navigation li a.active {
-  background: var(--color-button);
-  border-radius: 50px;
-  padding: 8px 8px;
+  padding: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.list-navigation li a span {
+.list-navigation li a {
+  display: block;
+  text-align: center;
+}
+
+.list-navigation li a svg {
+  font-size: 20px;
+color: #f0f2f4;
+}
+.list-navigation li a{
+   border-radius: 50px;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.list-navigation li a.active , .list-navigation li a:hover{
+  background: var(--color-button);
+ 
+} 
+ list-navigation li a span {
   display: block;
 }

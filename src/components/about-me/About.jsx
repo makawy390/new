@@ -2,7 +2,7 @@ import "./about.css";
 import { Container, Typography, Grid } from "@mui/material";
 import { FcGraduationCap } from "react-icons/fc";
 // import img from '../../assets/1.png'
-import { Fa2 , Fa0 , Fa1 } from "react-icons/fa6";
+// import { Fa2 , Fa0 , Fa1 } from "react-icons/fa6";
 
 const About = () => {
   const data = [

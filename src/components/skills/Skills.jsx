@@ -8,6 +8,8 @@ const Skills = () => {
     "JavaScript",
     "EcmaScript 6",
     "React JS",
+    "React Router Dom",
+    "Vite",
     "Redux",
     "Redux Toolkit",
     "Bootstrap",
@@ -22,6 +24,8 @@ const Skills = () => {
     "Cloudinary",
     "JsonWebToken",
     "Rest API",
+    "Formik",
+
     "SASS",
     "Git/Github",
     "Microsoft office",
@@ -33,7 +37,6 @@ const Skills = () => {
     "Leadership",
     "Skills Organization",
   ];
-
   const filtrationSkills = skills.map((skills, index) => (
     <Grid item xs={6}  key={index}>
       <div className="pag">
@@ -64,13 +67,13 @@ const Skills = () => {
           <Typography variant="h5" component="h2">
             Technical Skills
           </Typography>
-          <Grid container spacing={4}>
+          <Grid container spacing={3}>
             <Grid item md={6}>
               <div className="box">
                 <Typography variant="body1" component="h2">
                   Front End Developer
                 </Typography>
-                <Grid container spacing={2}>
+                <Grid container spacing={1}>
                   {filtrationSkills}
                 </Grid>
               </div>
@@ -80,7 +83,7 @@ const Skills = () => {
                 <Typography variant="body1" component="h2">
                   Other Skills
                 </Typography>
-                <Grid container spacing={2}>
+                <Grid container spacing={1}>
                   {filtrationOtherSkills}
                 </Grid>
               </div>
